@@ -2,10 +2,10 @@
 def linear_search_unsorted(arr, target):
     # Your code here
     steps = 0
-    for num in arr:
+    for i, num in enumerate(arr):
         steps += 1
         if num == target:
-            return (num, steps)
+            return (i, steps)
 
 # Binary Search
 def binary_search_unsorted(arr, target):
